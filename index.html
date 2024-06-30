@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Tracker and Chat App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="progress-tracker" id="progressTracker">
+            <!-- Steps will be dynamically generated here -->
+        </div>
+        <div class="main-content">
+            <div class="profile-card" id="profileCard">
+                <h2>Labour Profile</h2>
+                <p id="userName"></p>
+                <p id="userEmail"></p>
+                <p id="userBio"></p>
+            </div>
+            <div class="chat-app">
+                <div class="chat-messages">
+                    <div class="message bot">Hello there!</div>
+                    <div class="message user">Hi! How can I help you today?</div>
+                    <div class="message bot">I have a question about your products.</div>
+                    <div class="message user">Sure, feel free to ask!</div>
+                </div>
+                <input type="text" id="chatInput" placeholder="Type your message...">
+                <button id="sendButton">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

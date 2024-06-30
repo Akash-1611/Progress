@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.progress-tracker {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.step {
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ddd;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.step.completed {
+    background-color: #4caf50;
+    color: white;
+}
+
+.step.in-progress {
+    background-color: #ff9800;
+    color: white;
+}
+
+.step.pending {
+    background-color: #ddd;
+    color: black;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.profile-card {
+    width: 60%;
+    padding: 20px;
+    background-color: #2bac56;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-right: 20px;
+}
+
+.profile-card h2 {
+    margin-top: 0;
+}
+
+.chat-app {
+    width: 35%;
+    padding: 20px;
+    border-left: 1px solid #ddd;
+}
+
+.chat-messages {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.message {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.message.bot {
+    background-color: #e0e0e0;
+    align-self: flex-start;
+}
+
+.message.user {
+    background-color: #4caf50;
+    color: white;
+    align-self: flex-end;
+}
+
+input[type="text"] {
+    width: calc(100% - 60px);
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+label {
+    margin-right: 5px;
+}
